@@ -1,0 +1,50 @@
+Let's make a game!
+	name:Crystal Clicker
+	by:Chris Wald
+	desc:Chris's custom Cogito-centric Cookie Clicker clone
+	created:18/6/2020
+	updated:18/6/2020
+	version:1
+
+Settings
+	background:https://chriswald.com/crystalclicker/background.png
+	building cost increase:115%
+	building cost refund:50%
+	spritesheet:icons, 48 by 48, https://chriswald.com/crystalclicker/icons.png
+	stylesheet:https://chriswald.com/crystalclicker/style.css
+
+Layout
+	use default
+		
+Buttons
+	*crystalButton
+		name:Make a Crystal report
+		desc:Click this Crystal report to get more Crystal reports!
+		on click:anim icon wobble
+		on click:yield 1 crystal
+		icon:https://chriswald.com/crystalclicker/crystalreport.png
+		no text
+		class:bigButton hasFlares 
+		icon class:shadowed norepeat
+		tooltip origin:bottom
+		tooltip class:red
+
+Resources
+	*crystal|crystals
+		name:Crystal report|Crystal reports
+		desc:These are your Crystal reports. Your goal is to have as many as possible!
+		icon:icons[0,0]
+		class:noBackground
+		show earned
+
+Buildings
+	*TEMPLATE
+		on click:anim glow
+
+	*cursor|cursors
+		name:Cursor|Cursors
+		desc:Autoclicks once every 10 seconds
+		icon:icons[0,1]
+		cost:15 crystals
+		on tick:yield 0.1 crystal
+		unlocked
