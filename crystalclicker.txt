@@ -7,11 +7,11 @@ Let's make a game!
 	version:1
 
 Settings
-	background:https://chriswald.com/crystalclicker/background.png
+	background:https://crystalclicker.chriswald.com/background.png
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, https://chriswald.com/crystalclicker/icons.png
-	stylesheet:https://chriswald.com/crystalclicker/style.css
+	spritesheet:icons, 48 by 48, https://crystalclicker.chriswald.com/icons.png
+	stylesheet:https://crystalclicker.chriswald.com/style.css
 
 Layout
 	use default
@@ -22,7 +22,7 @@ Buttons
 		desc:Click this Crystal report to get more Crystal reports!
 		on click:anim icon wobble
 		on click:yield 1 crystal
-		icon:https://chriswald.com/crystalclicker/crystalreport.png
+		icon:https://crystalclicker.chriswald.com/crystalreport.png
 		no text
 		class:bigButton hasFlares 
 		icon class:shadowed norepeat
