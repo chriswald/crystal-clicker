@@ -48,3 +48,39 @@ Buildings
 		cost:15 crystals
 		on tick:yield 0.1 crystal
 		unlocked
+	
+	*bid|bids
+		name:BID|BIDs
+		desc:A faithful BID to write you more Crystal reports<//><b>Effect:</b><.>Produces 1 report every second.
+		icon:icons[0,2]
+		cost:100 crystals
+		on tick:yield 1 crystal
+		req:100 crystals:earned
+	
+	*webi|webis
+		name:WebI report|WebI reports
+		desc:Why can't users just build the reports themselves?<//><b>Effect:</b><.>Produces 8 reports every second.
+		icon:icons[0,3]
+		cost:1100 crystals
+		on tick:yield 8 crystals
+		req:1100 crystals:earned
+
+	*ajs|ajss
+		name:AJS|AJSs
+		desc:<//><b>Effect:</b><.>Produces 47 reports every second.
+		icon:icons[0,4]
+		cost:12000 crystals
+		on tick:yield 47 crystals
+		req:12000 crystals:earned
+	
+	*factory
+
+	*bank
+
+	*helios|helioses
+		name:Helios|Helios
+		desc:Bringing the light to Crystal!<//><b>Effect:</b><.>Produces 7800 reports every second.
+		icon:icons[0,7]
+		cost:20000000 crystals
+		on tick:yield 7800 crystals
+		req:20000000 crystals:earned

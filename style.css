@@ -137,7 +137,7 @@
 }
 .fullWidth,.fullWidth:hover
 {
-	background:linear-gradient(to right,rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 50%,rgba(0,0,0,0) 100%);
+	background:linear-gradient(to right,rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 50%,rgba(0,0,0,0) 100%);
 	box-shadow:none;
 }
 .fullWidth:before,.fullWidth:after
