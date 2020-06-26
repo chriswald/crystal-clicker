@@ -65,8 +65,8 @@ Buildings
 		on tick:yield 8 crystals
 		req:1100 crystals:earned
 
-	*ajs|ajss
-		name:AJS|AJSs
+	*ras|rass
+		name:RAS|RASs
 		desc:<//><b>Effect:</b><.>Produces 47 reports every second.
 		icon:icons[0,4]
 		cost:12000 crystals
