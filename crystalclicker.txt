@@ -73,9 +73,21 @@ Buildings
 		on tick:yield 47 crystals
 		req:12000 crystals:earned
 	
-	*factory
+	*pdf|pdfs
+		name:PDF|PDFs
+		desc:Putting the the "paper" in "paperless EMR"<//><b>Effect:</b><.>Produces 260 reports every second.
+		icon:icons[0,5]
+		cost:130000 crystals
+		on tick:yield 260 crystals
+		req:130000 crystals:earned
 
-	*bank
+	*epicact|epicacts
+		name:EpicAct Link|EpicAct Links
+		desc:Wait, are these the same as EpicBIAct links?<//><b>Effect:</b><.>Produces 1400 reports every second.
+		icon:icons[0,6]
+		cost:1400000 crystals
+		on tick:yield 1400 crystals
+		req:1400000 crystals:earned
 
 	*helios|helioses
 		name:Helios|Helios
