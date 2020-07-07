@@ -91,7 +91,7 @@ Buildings
 
 	*helios|helioses
 		name:Helios|Helios
-		desc:Bringing the light to Crystal!<//><b>Effect:</b><.>Produces 7800 reports every second.
+		desc:Bringing Crystal to Light!<//><b>Effect:</b><.>Produces 7800 reports every second.
 		icon:icons[0,7]
 		cost:20000000 crystals
 		on tick:yield 7800 crystals
