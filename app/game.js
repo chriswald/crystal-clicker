@@ -408,7 +408,7 @@ G.Init=function()
 	SAVE & LOAD
 	=======================================================================================*/
 	
-	G.saveTo=0;//we save the game to the key "IGM-"+game's url
+	G.saveTo="CrystalClicker";//we save the game to the key "IGM-"+game's url
 	G.save=function(returnOnly)
 	{
 		if (!G.saveTo) return false;
