@@ -112,6 +112,14 @@ Buildings
 		cost:5100000000 crystals
 		on tick:yield 260000 crystals
 		req:5100000000 crystals:earned
+	
+	pdfjs|pdfjss
+		name:PDF.js|PDF.js's
+		desc:View. Crystal. Reports. On. The. Web.<//><b>Effect:</b><.>Produces 1600000 reports every second.
+		icon:icons[0,10]
+		cost:75000000000 crystals
+		on tick:yield 1600000 crystals
+		req:75000000000 crystals
 
 Upgrades
 	*boe31
