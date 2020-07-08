@@ -96,3 +96,104 @@ Buildings
 		cost:20000000 crystals
 		on tick:yield 7800 crystals
 		req:20000000 crystals:earned
+
+	*don|dons
+		name:Don from SAP|Dons from SAP
+		desc:Solving Crystal memory leaks one printer driver at a time.<//><b>Effect:</b><.>Produces 44000 reports every second.
+		icon:icons[0,8]
+		cost:330000000 crystals
+		on tick:yield 44000 crystals
+		req:330000000 crystals:earned
+	
+	*explorer|explorers
+		name:Explorer|Explorers
+		desc:This product doesn't even exist but people keep trying to set it up.<//><b>Effect:</b><.>Produces 260000 reports every second.
+		icon:icons[0,9]
+		cost:5100000000 crystals
+		on tick:yield 260000 crystals
+		req:5100000000 crystals:earned
+
+Upgrades
+	*boe31
+		name:BOE 3.1
+		desc:<//><b>Effect:</b><.>Increases CPS by 1%
+		passive:multiply yield of crystals by 1.01
+		cost:999999 crystals
+		req:50000 crystals:earned
+	
+	*boe40
+		name:BOE 4.0
+		desc:<//><b>Effect:</b><.>Increases CPS by 1%
+		passive:multiply yield of crystals by 1.01
+		cost:5000000 crystals
+		req:250000 crystals:earned
+	
+	*boe41
+		name:BOE 4.1
+		desc:<//><b>Effect:</b><.>Increases CPS by 1%
+		passive:multiply yield of crystals by 1.01
+		cost:10000000 crystals
+		req:500000 crystals:earned
+	
+	*boe419
+		name:BOE 4.1 SP9
+		desc:<//><b>Effect:</b><.>Increases CPS by 1%
+		passive:multiply yield of crystals by 1.01
+		cost:50000000 crystals
+		req:2500000 crystals:earned
+	
+	*boe42
+		name:BOE 4.2
+		desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+		cost:100000000 crystals
+		req:5000000 crystals:earned
+	
+	*boe4222
+		name:BOE 4 Triple Duce
+		desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+		cost:100000000 crystals
+		req:5000000 crystals:earned
+	
+	*boe423
+		name:BOE 4.2 SP3
+		desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+		cost:100000000 crystals
+		req:5000000 crystals:earned
+	
+	*boe424
+		name:BOE 4.2 SP4
+		desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+		cost:100000000 crystals
+		req:5000000 crystals:earned
+	
+	*boe427
+		name:BOE 4.2 SP7
+		desc:<//><b>Effect:</b><.>Increases CPS by 1%
+		passive:multiply yield of crystals by 1.01
+		cost:500000000 crystals
+		req:25000000 crystals:earned
+	
+	*boe428
+		name:BOE 4.2 SP8
+		desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+		cost:1000000000 crystals
+		req:50000000 crystals:earned
+	
+	*boe43
+		name:BOE 4.3
+		desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+		cost:5000000000 crystals
+		req:250000000 crystals:earned
+	
+	*boe50
+		name:BOE 5.0
+		desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+		cost:10000000000 crystals
+		req:500000000 crystals:earned
