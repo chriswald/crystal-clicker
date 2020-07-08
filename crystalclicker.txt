@@ -67,7 +67,7 @@ Buildings
 
 	*ras|rass
 		name:RAS|RASs
-		desc:<//><b>Effect:</b><.>Produces 47 reports every second.
+		desc:100% uptime except when you need them<//><b>Effect:</b><.>Produces 47 reports every second.
 		icon:icons[0,4]
 		cost:12000 crystals
 		on tick:yield 47 crystals
