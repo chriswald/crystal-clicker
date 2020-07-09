@@ -1694,7 +1694,7 @@ G.Init=function()
 			var str='';
 			if (!me.noBuy && me.costs.length>0)//me.type=='res' || me.type=='building')
 			{
-				str+='<div class="costs">'+G.getCostsStr(me.getCosts())+'</div>';
+				str+='<div class="costs">'+G.getCostsStr(me.getCosts(true, me.amount))+'</div>';
 			}
 			if (me.icon) str+='<div class="thing-icon" style="'+G.resolveIcon(me.icon,true)+'"></div>';
 			if (me.name) str+='<div class="title">'+me.name+'</div>';
@@ -1832,12 +1832,12 @@ G.Init=function()
 			delete this.costsl;
 		}
 		
-		G.Thing.prototype.getCosts=function(mult)
+		G.Thing.prototype.getCosts=function(isBuying, numberOwned)
 		{
 			//also see : G.getCostsStr, G.spendCosts
 			var costs=this.costs;
 			var costsByThing={};
-			var mult=mult||1;
+			var mult=(isBuying ? 1 : -1)
 			var refund=false;
 			if (mult<0) refund=true;
 			var add=this.costAdd;
@@ -1845,12 +1845,12 @@ G.Init=function()
 			if (refund) mult*=this.refundMult;
 			for (var i in costs)
 			{
-				for (var ii in costs[i])
+				for (var j in costs[i])
 				{
-					var me=costs[i][ii];
+					var me=costs[i][j];
 					var w=me.w;
 					var v=(me.v);
-					if (this.type=='building') v=(me.v*Math.pow(this.costRate,Math.max(0,this.amount)));
+					if (this.type=='building') v=(me.v*Math.pow(this.costRate,Math.max(0,numberOwned)));
 					v+=add;
 					v+=w.costAdd;
 					if (this.costAddFor[w.id]) v+=this.costAddFor[w.id];
@@ -1859,12 +1859,58 @@ G.Init=function()
 					if (refund) v*=w.refundMult;
 					if (this.costMultFor[w.id]) v*=this.costMultFor[w.id];
 					if (refund && this.refundMultFor[w.id]) v*=this.refundMultFor[w.id];
-					if (refund && this.type=='building' && this.amount==0) v=0;
+					if (refund && this.type=='building' && numberOwned==0) v=0;
 					if (!costsByThing[w.id]) costsByThing[w.id]=0;
 					costsByThing[w.id]+=v;
 				}
 			}
 			return costsByThing;
+		}
+
+		G.Thing.prototype.getCostsForMultiple = function(howMany, numberOwned, isBuying)
+		{
+			var totalCosts = null;
+			var costs;
+			var start,end;
+			var multiplyer = (isBuying ? 1 : 0.5);
+
+			if (isBuying)
+			{
+				start = numberOwned;
+				end = start + howMany;
+			}
+			else
+			{
+				start = numberOwned - howMany + 1;
+				end = numberOwned + 1;
+			}
+
+			for (var i = start; i < end; i ++)
+			{
+				costs = this.getCosts(isBuying, i);
+
+				if (totalCosts === null)
+				{
+					totalCosts = costs;
+				}
+				else
+				{
+					for (var j in totalCosts)
+					{
+						totalCosts[j] += costs[j];
+					}
+				}
+			}
+
+			if (multiplyer !== 1)
+			{
+				for (var cost in totalCosts)
+				{
+					totalCosts[cost] *= multiplyer;
+				}
+			}
+
+			return totalCosts;
 		}
 		
 		G.Thing.prototype.checkReqs=function()
@@ -1988,10 +2034,20 @@ G.Init=function()
 						if (me.costs.length>0)
 						{
 							var amount=1;
-							if (me.type=='building') {amount=(G.bulk<0?G.bulk*0.5:G.bulk);}
-							var costs=G.getCostsStr(me.getCosts(amount),(me.type=='upgrade'?(owned>0):0),true);
-							if (!me.noText && me.costsl) me.costsl.innerHTML=costs.str;
-							if (costs.lacking>0 && (!owned || me.type=='building')) me.l.classList.add('cantAfford');
+							var isBuying = (G.bulk < 0 ? false : true);
+
+							if (me.type=='building') 
+							{
+								amount = Math.abs(G.bulk);
+							}
+
+							var costs = me.getCostsForMultiple(amount, me.amount, isBuying);
+
+							//var costs=G.getCostsStr(me.getCosts(amount),(me.type=='upgrade'?(owned>0):0),true);
+							var costStrings = G.getCostsStr(costs,(me.type=='upgrade'?(owned>0):0),true);
+
+							if (!me.noText && me.costsl) me.costsl.innerHTML=costStrings.str;
+							if (costStrings.lacking>0 && (!owned || me.type=='building')) me.l.classList.add('cantAfford');
 							else me.l.classList.remove('cantAfford');
 						}
 						me.updateOwned(owned>0);
@@ -2015,25 +2071,38 @@ G.Init=function()
 				}
 				if (this.type=='building' && !this.noBuy)
 				{
-					var amount=G.bulk;
-					if (amount<0)//selling
+					var isBuying = (G.bulk < 0 ? false : true);
+
+					var amount = Math.abs(G.bulk);
+
+					if (isBuying)
 					{
-						if (this.amount+amount>=0) out=G.refundCosts(this.getCosts(-amount*this.refundRate));
+						out=G.spendCosts(this.getCostsForMultiple(amount, this.amount, true));
 					}
-					else if (!this.limit || this.limit()>=this.amount+amount)//buying
+					else
 					{
-						out=G.spendCosts(this.getCosts(amount));
+						if (this.amount >= amount)
+						{
+							var costs = this.getCostsForMultiple(amount, this.amount, false);
+							for (var cost in costs)
+							{
+								costs[cost] *= -1;
+							}
+
+							out=G.refundCosts(costs);
+						}
 					}
+
 					if (out)
 					{
 						this.doEffects('undo grants');
-						this.earn(amount);
+						this.earn(G.bulk);
 						win=true;
 					}
 				}
 				else if (this.type=='upgrade' && !this.owned && !this.noBuy)
 				{
-					out=G.spendCosts(this.getCosts());
+					out=G.spendCosts(this.getCosts(true, this.amount));
 					if (out)
 					{
 						this.doEffects('undo grants');
