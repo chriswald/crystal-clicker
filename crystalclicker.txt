@@ -180,8 +180,8 @@ Upgrades
 	
 	*boe427
 		name:BOE 4.2 SP7
-		desc:<//><b>Effect:</b><.>Increases CPS by 1%
-		passive:multiply yield of crystals by 1.01
+		desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
 		cost:500000000 crystals
 		req:25000000 crystals:earned
 	
