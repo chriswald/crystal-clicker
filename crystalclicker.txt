@@ -205,3 +205,10 @@ Upgrades
 		passive:multiply yield of crystals by 1.02
 		cost:10000000000 crystals
 		req:500000000 crystals:earned
+	
+	*subinactivation
+	    name:Subscription Inactivation
+	    desc:<//><b>Effect:</b><.>Decreases CPS by 80%
+	    passive:multiply yield of crystals by .2
+	    cost:50000000000 crystals
+	    req:2500000000 crystals:earned
