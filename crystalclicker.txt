@@ -215,7 +215,7 @@ Upgrades
 	
 	*subreactivation
 	    name:Setting Days to keep instance to 1095
-	    desc:<//><b>Effect:</b><.>Undoes Subscription Inactivation
-	    passive:multiply yield of crystals by 5
+	    desc:<//><b>Effect:</b><.>Undoes Subscription Inactivation and increases CPS by 6%.
+	    passive:multiply yield of crystals by 5.06
 	    cost:50000000000 crystals
 	    req:subinactivation
