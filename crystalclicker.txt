@@ -119,7 +119,7 @@ Buildings
 		icon:icons[0,10]
 		cost:75000000000 crystals
 		on tick:yield 1600000 crystals
-		req:75000000000 crystals
+		req:75000000000 crystals:earned
 
 Upgrades
 	*boe31
