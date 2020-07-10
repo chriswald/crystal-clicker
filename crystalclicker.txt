@@ -218,4 +218,4 @@ Upgrades
 	    desc:<//><b>Effect:</b><.>Undoes Subscription Inactivation
 	    passive:multiply yield of crystals by 5
 	    cost:50000000000 crystals
-	    req:2500000000 crystals:earned
+	    req:subinactivation
