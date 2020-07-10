@@ -212,3 +212,10 @@ Upgrades
 	    passive:multiply yield of crystals by .2
 	    cost:50000000000 crystals
 	    req:2500000000 crystals:earned
+	
+	*subreactivation
+	    name:Setting Days to keep instance to 1095
+	    desc:<//><b>Effect:</b><.>Undoes Subscription Inactivation
+	    passive:multiply yield of crystals by 5
+	    cost:50000000000 crystals
+	    req:2500000000 crystals:earned
