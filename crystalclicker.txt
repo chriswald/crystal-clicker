@@ -120,6 +120,30 @@ Buildings
 		cost:75000000000 crystals
 		on tick:yield 1600000 crystals
 		req:75000000000 crystals:earned
+	
+	*wiki|wikis
+		name:A Wiki|Wikis
+		desc:"Hey Siri, beatbox for me."<//><b>Effect:</b><.>Produces 10000000 reports every second.
+		icon:icons[0,11]
+		cost:1000000000000 crystals
+		on tick:yield 10000000 crystals
+		req:1000000000000 crystals:earned
+
+	*namelessts|namelesstss
+		name:The Nameless TS|Nameless TSs
+		desc:Hi! My name is (what?) My name is (who?)<//><b>Effect:</b><.>Produces 65000000 reports every second.
+		icon:icons[0,12]
+		cost:14000000000000 crystals
+		on tick:yield 65000000 crystals
+		req:14000000000000 crystals:earned
+	
+	*officehours
+		name:Office Hours
+		desc:Can someone cover for me?<//><b>Effect</b><.>Produces 430000000 reports every second.
+		icon:icons[0,13]
+		cost:170000000000000 crystals
+		on tick:yield 430000000 crystals
+		req:170000000000000 crystals:earned
 
 Upgrades
 	*boe31
@@ -219,3 +243,87 @@ Upgrades
 	    passive:multiply yield of crystals by 5.06
 	    cost:50000000000 crystals
 	    req:subinactivation
+	
+	*wikionenote
+		name:A OneNote full of wikis
+		desc:<//><b>Effect</b><.>Wikis are twice as efficient.
+		passive:multiply yield of wikis by 2
+		cost:10000000000000 crystals
+		req:1 wiki
+	
+	*wikiexcel
+		name:An Excel full of wikis
+		desc:<//><b>Effect</b><.>Wikis are twice as efficient.
+		passive:multiply yield of wikis by 2
+		cost:50000000000000 crystals
+		req:5 wikis
+	
+	*wikiwiki
+		name:An wiki full of wikis
+		desc:<//><b>Effect</b><.>Wikis are twice as efficient.
+		passive:multiply yield of wikis by 2
+		cost:500000000000000 crystals
+		req:25 wikis
+
+	*namelesstsoffice
+		name:Showing up unannounced
+		desc:<//><b>Effect</b><.>Nameless TS are twice as efficient.
+		passive:multiply yield of namelessts by 2
+		cost:140000000000000 crystals
+		req:1 namelessts
+
+	*namelesstsphone
+		name:Calling from a conference room
+		desc:<//><b>Effect</b><.>Nameless TS are twice as efficient.
+		passive:multiply yield of namelessts by 2
+		cost:700000000000000 crystals
+		req:5 namelessts
+
+	*namelesststext
+		name:Texting SLG IDs
+		desc:<//><b>Effect</b><.>Nameless TS are twice as efficient.
+		passive:multiply yield of namelessts by 2
+		cost:7000000000000000 crystals
+		req:25 namelessts
+
+	*namelesstsmail
+		name:A letter with no return address
+		desc:<//><b>Effect</b><.>Nameless TS are twice as efficient.
+		passive:multiply yield of namelessts by 2
+		cost:700000000000000000 crystals
+		req:50 namelessts
+
+	*officehoursfriday
+		name:Friday
+		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
+		passive:multiply yield of officehours by 2
+		cost:1700000000000000
+		req:1 officehours
+	
+	*officehourskohutek
+		name:Going to Kohutek
+		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
+		passive:multiply yield of officehours by 2
+		cost:8500000000000000
+		req:5 officehours
+	
+	*officehourswednesday
+		name:Wednesday
+		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
+		passive:multiply yield of officehours by 2
+		cost:85000000000000000
+		req:25 officehours
+	
+	*officehourstuesday
+		name:Tuesday
+		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
+		passive:multiply yield of officehours by 2
+		cost:8500000000000000000
+		req:50 officehours
+	
+	*officehoursmonda
+		name:Monday
+		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
+		passive:multiply yield of officehours by 2
+		cost:850000000000000000000
+		req:100 officehours
