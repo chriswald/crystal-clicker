@@ -243,6 +243,42 @@ Upgrades
 	    passive:multiply yield of crystals by 5.06
 	    cost:50000000000 crystals
 	    req:subinactivation
+
+	*ssl
+		name:SSL
+	    desc:<//><b>Effect:</b><.>Increases CPS by 4%
+		passive:multiply yield of crystals by 1.04
+	    cost:100000000000 crystals
+	    req:5000000000 crystals:earned
+
+	*tls10
+		name:TLS 1.0
+	    desc:<//><b>Effect:</b><.>Increases CPS by 4%
+		passive:multiply yield of crystals by 1.04
+	    cost:100000000000 crystals
+	    req:5000000000 crystals:earned
+
+	*tls11
+		name:TLS 1.1
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:500000000000 crystals
+	    req:25000000000 crystals:earned
+
+	*tls12
+		name:TLS 1.2
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:1000000000000 crystals
+	    req:50000000000 crystals:earned
+
+	*tls13
+		name:TLS 1.2
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:5000000000000 crystals
+	    req:250000000000 crystals:earned
+
 	
 	*wikionenote
 		name:A OneNote full of wikis
