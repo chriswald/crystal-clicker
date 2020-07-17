@@ -295,7 +295,7 @@ Upgrades
 		req:5 wikis
 	
 	*wikiwiki
-		name:An wiki full of wikis
+		name:An wiki wiki
 		desc:<//><b>Effect</b><.>Wikis are twice as efficient.
 		passive:multiply yield of wikis by 2
 		cost:500000000000000 crystals
