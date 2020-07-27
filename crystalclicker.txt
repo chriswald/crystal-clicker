@@ -333,33 +333,33 @@ Upgrades
 		name:Friday
 		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
 		passive:multiply yield of officehours by 2
-		cost:1700000000000000
+		cost:1700000000000000 crystals
 		req:1 officehours
 	
 	*officehourskohutek
 		name:Going to Kohutek
 		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
 		passive:multiply yield of officehours by 2
-		cost:8500000000000000
+		cost:8500000000000000 crystals
 		req:5 officehours
 	
 	*officehourswednesday
 		name:Wednesday
 		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
 		passive:multiply yield of officehours by 2
-		cost:85000000000000000
+		cost:85000000000000000 crystals
 		req:25 officehours
 	
 	*officehourstuesday
 		name:Tuesday
 		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
 		passive:multiply yield of officehours by 2
-		cost:8500000000000000000
+		cost:8500000000000000000 crystals
 		req:50 officehours
 	
 	*officehoursmonda
 		name:Monday
 		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
 		passive:multiply yield of officehours by 2
-		cost:850000000000000000000
+		cost:850000000000000000000 crystals
 		req:100 officehours
