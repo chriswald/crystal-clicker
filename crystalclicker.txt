@@ -260,24 +260,157 @@ Upgrades
 
 	*tls11
 		name:TLS 1.1
-	    desc:<//><b>Effect:</b><.>Increases CPS by 4%
-		passive:multiply yield of crystals by 1.04
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
 	    cost:500000000000 crystals
 	    req:25000000000 crystals:earned
 
 	*tls12
 		name:TLS 1.2
-	    desc:<//><b>Effect:</b><.>Increases CPS by 4%
-		passive:multiply yield of crystals by 1.04
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
 	    cost:1000000000000 crystals
 	    req:50000000000 crystals:earned
 
 	*tls13
 		name:TLS 1.3
-	    desc:<//><b>Effect:</b><.>Increases CPS by 4%
-		passive:multiply yield of crystals by 1.04
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
 	    cost:5000000000000 crystals
 	    req:250000000000 crystals:earned
+	
+	*sourdoughstarter
+		name:Sourdough Starter
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:10000000000000 crystals
+	    req:5000000000000 crystals:earned
+	
+	*doom
+		name:Doom
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:50000000000000 crystals
+	    req:25000000000000 crystals:earned
+	
+	*despair
+		name:Despair
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:100000000000000 crystals
+	    req:50000000000000 crystals:earned
+	
+	*slicerdicer4
+		name:SlicerDicer IV: A New Hope
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:500000000000000 crystals
+	    req:250000000000000 crystals:earned
+	
+	*yearofcrystal
+		name:Year of Crystal
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:500000000000000 crystals
+	    req:250000000000000 crystals:earned
+	
+	*fiorifycrystals
+		name:Fiorify Your Crystals Into Diamonds
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:1000000000000000 crystals
+	    req:500000000000000 crystals:earned
+	
+	*thirtystacks
+		name:30 Stacks!
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:1000000000000000 crystals
+	    req:500000000000000 crystals:earned
+	
+	*mouseinyourpocket
+		name:We? You have a mouse in your pocket?
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:10000000000000000 crystals
+	    req:5000000000000000 crystals:earned
+	
+	*doom19
+		name:Doom-19: Pandemic Rises
+	    desc:<//><b>Effect:</b><.>Increases CPS by 2%
+		passive:multiply yield of crystals by 1.02
+	    cost:10000000000000000 crystals
+	    req:5000000000000000 crystals:earned
+	
+	*fiorifybread
+		name:Fiorify Your Bread
+	    desc:<//><b>Effect:</b><.>Increases CPS by 4%
+		passive:multiply yield of crystals by 1.04
+	    cost:50000000000000000 crystals
+	    req:25000000000000000 crystals:earned
+	
+	*pokemongo
+		name:Pokemon Go!
+	    desc:<//><b>Effect:</b><.>Increases CPS by 4%
+		passive:multiply yield of crystals by 1.04
+	    cost:50000000000000000 crystals
+	    req:25000000000000000 crystals:earned
+	
+	*bearcrawl
+		name:Bear crawl up the capitol (backwards)
+	    desc:<//><b>Effect:</b><.>Increases CPS by 3%
+		passive:multiply yield of crystals by 1.03
+	    cost:100000000000000000 crystals
+	    req:50000000000000000 crystals:earned
+	
+	*whatspoppin
+		name:What's Poppin'?
+	    desc:<//><b>Effect:</b><.>Increases CPS by 3%
+		passive:multiply yield of crystals by 1.03
+	    cost:500000000000000000 crystals
+	    req:250000000000000000 crystals:earned
+	
+	*thewrongone
+		name:(2) The Wrong One
+	    desc:<//><b>Effect:</b><.>Increases CPS by 3%
+		passive:multiply yield of crystals by 1.03
+	    cost:1000000000000000000 crystals
+	    req:500000000000000000 crystals:earned
+	
+	*geenfout
+		name:Geen Fout
+	    desc:<//><b>Effect:</b><.>Increases CPS by 3%
+		passive:multiply yield of crystals by 1.03
+	    cost:5000000000000000000 crystals
+	    req:2500000000000000000 crystals:earned
+	
+	*swarmofcornbread
+		name:Swarm of Cornbread
+	    desc:<//><b>Effect:</b><.>Increases CPS by 3%
+		passive:multiply yield of crystals by 1.03
+	    cost:10000000000000000000 crystals
+	    req:5000000000000000000 crystals:earned
+	
+	*enjoythesun
+		name:Enjoy the Sun!~~!@
+	    desc:<//><b>Effect:</b><.>Increases CPS by 3%
+		passive:multiply yield of crystals by 1.03
+	    cost:50000000000000000000 crystals
+	    req:25000000000000000000 crystals:earned
+	
+	*flowermooon
+		name:Flower Mooon
+	    desc:<//><b>Effect:</b><.>Increases CPS by 4%
+		passive:multiply yield of crystals by 1.04
+	    cost:100000000000000000000 crystals
+	    req:50000000000000000000 crystals:earned
+	
+	*vladimirpoutine
+		name:Vladimir Poutine
+	    desc:<//><b>Effect:</b><.>Increases CPS by 4%
+		passive:multiply yield of crystals by 1.04
+	    cost:500000000000000000000 crystals
+	    req:250000000000000000000 crystals:earned
 
 	
 	*wikionenote
@@ -357,7 +490,7 @@ Upgrades
 		cost:8500000000000000000 crystals
 		req:50 officehours
 	
-	*officehoursmonda
+	*officehoursmonday
 		name:Monday
 		desc:<//><b>Effect</b><.>Office Hours are twice as efficient.
 		passive:multiply yield of officehours by 2
