@@ -2803,7 +2803,8 @@ G.Init=function()
 				else if (!neutral) classes+=' hasEnough';
 				str+='<div class="'+classes+'">'+B(v)+' '+(v==1?w.name:w.plural)+'</div>';
 			}
-			if (t>0 && !neutral) str+='<div class="costTimeRemaining">(in '+sayTime(t*1000+750)+')</div>';
+			//if (t>0 && !neutral) str+='<div class="costTimeRemaining">(in '+sayTime(t*1000+750)+')</div>';
+			if (t>0 && !neutral) str+='<div class="costTimeRemaining">(in a while)</div>';
 			if (!specialOutput) return str;
 			else return {str:str,lacking:notEnough};
 		}
